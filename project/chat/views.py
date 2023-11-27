@@ -56,15 +56,12 @@ class ChatGPTAPI(APIView):
         
         UserChatRequest.objects.filter(pk=user_chat_request.pk).update(request_count=F('request_count') + 1)
 
-        # 요청으로부터 받은 데이터 추출
         user_input = request.data.get('user_input')
         interview_topic = request.data.get('interview_topic')
         chats = Chat.objects.filter(user=request.user).order_by('created_at')
 
-        # 기존 채팅 내역과 새로운 채팅을 합침
         combined_chats = [{"role": chat.role, "content": chat.content} for chat in chats]
 
-        # 시스템 시작 메시지 추가 (기존 채팅 내역이 없을 경우)
         if not user_input and not chats:
             system_start_message = {
                 "role": "system", 
@@ -72,20 +69,16 @@ class ChatGPTAPI(APIView):
             }
             combined_chats.append(system_start_message)
 
-            # 시스템 저장
             ai_chat = Chat(user=request.user, role=system_start_message['role'], content=system_start_message['content'])
             ai_chat.save()
 
-        # 사용자 입력을 채팅 내역에 저장
         if user_input:
             user_chat = {"role": "user", "content": user_input}
             combined_chats.append(user_chat)
 
-            # 사용자 입력을 데이터베이스에 저장
             user_input_chat = Chat(user=request.user, role="user", content=user_input)
             user_input_chat.save()
 
-        # 새로운 채팅 내역을 OpenAI API에 요청 보내기
         openai.api_key = env('OPENAI_API_KEY')
 
         response = openai.ChatCompletion.create(
@@ -100,11 +93,9 @@ class ChatGPTAPI(APIView):
 
         ai_response = response['choices'][0]['message']['content']
 
-        # AI 응답을 채팅 내역에 저장
         ai_chat = Chat(user=request.user, role="assistant", content=ai_response)
         ai_chat.save()
 
-        # TTS 생성
         tts = gTTS(text=ai_response, lang='en', slow=False)
         audio_bytes_io = BytesIO()
         tts.write_to_fp(audio_bytes_io)
