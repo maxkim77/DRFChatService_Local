@@ -179,7 +179,10 @@ dj-rest-auth==2.2.5  # Adjust the version as needed
 ![2](https://github.com/maxkim77/DRFChatService_BE/assets/141907655/190b0ea7-37d3-46a5-93f7-d7ed391b77ed)
 
 ## 7. 데이터베이스 모델링:
-![Untitled](https://github.com/maxkim77/DRFChatService_BE/assets/141907655/68982241-41bc-42ca-a472-ba572c44ee93)
+
+
+![Untitled (1)](https://github.com/maxkim77/DRFChatService_BE/assets/141907655/08e230ca-6fa1-4fc0-a460-766f54af200a)
+
 ## 8. 아키텍처: 시스템 아키텍처 설계
 ## 9. 메인 기능: 주요 기능 및 작동 방식
 - 주요 페이지 구현
