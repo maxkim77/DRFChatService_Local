@@ -8,7 +8,7 @@ class SignupTestCase(APITestCase):
         data = {
             'email': 'test@example.com',
             'password1': 'somepassword',
-            'password2': 'somepassword',
+            'password2': 'somepassword',   
         }
         response = self.client.post(reverse('rest_register'), data)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
