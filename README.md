@@ -117,8 +117,6 @@
 
   [![Mermaid](https://img.shields.io/badge/Mermaid-Link-blue.svg)](https://mermaid.js.org/)![wbs](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/7bbdc179-facc-427e-b14e-5d787a2a3cf3)
 
-![Uploading wbs.png…]()
-
 
 
 | Scope              | WBS Level | WBS ID | WBS Element Title      | Completion (Completed Date)  |
