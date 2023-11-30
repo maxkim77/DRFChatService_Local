@@ -1,4 +1,4 @@
-# DRF와 Chat Gpt로 만든 영어인터뷰 서비스 - English Max
+# ☘ DRF와 Chat Gpt로 만든 영어인터뷰 서비스 - English Max
 ![제목 없는 디자인](https://github.com/maxkim77/DRFChatService/assets/141907655/7e90ccc0-12dd-4aeb-878b-fb1347cb54b6)
 
 ## 📌 0. Chat Service 개요
@@ -69,11 +69,9 @@
   [![DB SQLite](https://img.shields.io/badge/DB-SQLite-003B57.svg?style=for-the-badge&logo=sqlite)](https://www.sqlite.org/)
 
 ✔ Githug 프론트 배포, AWS Lightsail 백엔드 배포
-### 2.2 배포 URL:
-
-
-https://dev.maxworld7070.net/
-
+### 2.2 배포 및 관련 URL: https://dev.maxworld7070.net/
+📍Backend 배포용 : https://github.com/maxkim77/DRFChatService_BE
+📍Frontend 배포용 : https://github.com/maxkim77/DRFChatService_FE
 
 ##  🎊3. 요구사항 명세와 기능 명세
 - Tool : Mindmeister
