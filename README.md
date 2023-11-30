@@ -211,22 +211,19 @@
 
 - Tool : Uizard
 
+
   [![Uizard](https://img.shields.io/badge/Visit-Uizard-yellow?style=flat-square&logo=uizard)](https://uizard.io/)
 
 
-![image](https://github.com/maxkim77/DRFChatService/assets/141907655/4c51a948-7be2-4cca-8aa0-2ec702a934e7)
-
-
-![image](https://github.com/maxkim77/DRFChatService/assets/141907655/3a76be2a-41fe-4cd4-be1b-0a7720e1db5a)
-
-
-![슬라이드1](https://github.com/maxkim77/DRFChatService/assets/141907655/331cc110-a832-4000-8dbe-ed8b74ffbaaa)
+![5-1](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/f2357d1a-42c0-4463-9e78-00139712a9e2)
+![5-2](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/6b1b465b-4476-4e2c-b882-8d3871f5d09c)
+![슬라이드1](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/a387b703-9a64-45c5-b6a7-1ec88935462e)
 
 
 ##  🖼6. 데이터베이스 모델링:
 
+![6데이터베이스모델링](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/a0e44d52-3817-4b8e-8a80-8d45947407af)
 
-![Untitled (1)](https://github.com/maxkim77/DRFChatService/assets/141907655/5ae969d2-8250-4723-b751-ea9220bb28b0)
 - User Table: CustomUser 모델에서 기본키 id, 고유 필드 email 포함 함.
 
 
