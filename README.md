@@ -265,6 +265,7 @@
 
 - Chat Gpt - DRF 연결
 
+![DRF-Chat 연결](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/c9ad61d7-f871-4207-9dd2-d177b3ea6482)
 
 https://github.com/maxkim77/DRFChatService_Local/assets/141907655/44be6060-0727-4092-8fba-c892cfa7abfd
 
