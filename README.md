@@ -83,7 +83,8 @@
 
 [![MindMeister](https://img.shields.io/badge/MindMeister-Link-blue.svg)](https://www.mindmeister.com/)
 
-![cover](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/249439d9-9e83-434d-a556-cd0810e49ff0)
+
+![마인드맵](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/957f93e0-b4a2-4efd-92c7-9662a0330487)
 
 
 ### 3.1 기본 요구사항
