@@ -270,11 +270,14 @@
 - JWT : Json객체를 사용하여 정보를 안전하게 전송하기 위한 방식
 - 특별기능 : AI, Speech to Text
 
+
+
+
 - API 기능과 사용 방법을 명확히 전달 하기 위한 Swegger drf-yasg 사용하여 문서화
 
 ![ezgif com-resize (1)](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/a59b4221-c71c-44c4-bd0a-dc2ffcf76405)
-    - 자동화된 문서 생성
-    - 인터렉티브한 테스팅 인터페이스
+- 자동화된 문서 생성
+- 인터렉티브한 테스팅 인터페이스
     
 🎁 DRF API Document Pdf : https://drive.google.com/file/d/1kwkup07S1y43iVe64-FYTy0PvZ68nh5c/view?usp=sharing
        - 
