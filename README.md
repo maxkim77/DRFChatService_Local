@@ -127,7 +127,7 @@
 | Design             | 2         | des2   | URL Design             |  ✅ 11.21. |
 | Development        | 3         | dev1   | Page Implementation    |  ✅ 11.22. |
 | Development        | 3         | dev2   | CRUD Implementation    |  ✅ 11.22. |
-| Development        | 3         | dev3   | User Registration & Login | ✅ 11.25.  |
+| Development        | 3         | dev3   | User Registration & Login | ✅ 11.25.(일반토큰->JWT 구현에서 시간을 많이 할애|
 | Development        | 3         | dev4   | Unique User Permissions | ✅ 11.26 |
 | Development        | 3         | dev5   | ChatGPT Integration    | ✅ 11.27. |
 | UI/UX              | 4         | ui1    | UI Implementation      |  ✅ 11.27. |
