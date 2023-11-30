@@ -350,7 +350,7 @@ https://github.com/maxkim77/DRFChatService_Local/assets/141907655/44be6060-0727-
 
 ![ezgif com-resize (2)](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/627eb8ec-946c-4deb-bda3-17d0c3644bc4)
 
-* 금일 아침 다시 확인해보니 404에러가 떠서 서버점검중
+* 12.1. 다시 확인해보니 404에러가 떠서 서버점검중
 
 ## 📜10. 에러 및 해결: 개발 중 발생한 주요 문제 및 해결 방법
 **⚒ 오류 1: "400 (Bad Request)" 오류 발생**
