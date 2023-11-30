@@ -1,5 +1,5 @@
 # ☘ DRF와 Chat Gpt로 만든 영어인터뷰 서비스 - English Max
-![제목 없는 디자인](https://github.com/maxkim77/DRFChatService/assets/141907655/7e90ccc0-12dd-4aeb-878b-fb1347cb54b6)
+![cover](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/249439d9-9e83-434d-a556-cd0810e49ff0)
 
 ## 📌 0. Chat Service 개요
 
