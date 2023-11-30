@@ -210,11 +210,18 @@
 - Tool : Uizard
 
 
-  [![Uizard](https://img.shields.io/badge/Visit-Uizard-yellow?style=flat-square&logo=uizard)](https://uizard.io/)
+[![Uizard](https://img.shields.io/badge/Visit-Uizard-yellow?style=flat-square&logo=uizard)](https://uizard.io/)
 
 
+- 와이어 프레임
 ![5-1](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/f2357d1a-42c0-4463-9e78-00139712a9e2)
+
+
+- UI
 ![5-2](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/6b1b465b-4476-4e2c-b882-8d3871f5d09c)
+
+
+- 실제 구현 화면
 ![슬라이드1](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/a387b703-9a64-45c5-b6a7-1ec88935462e)
 
 
@@ -233,9 +240,33 @@
 
 - Chat 모델과 UserChatRequest 모델에서 user 필드를 통해 사용자 테이블과 다대일 관계
 
-## 7. 개발자 김정원
+##  🎨7. 아키텍처: 시스템 아키텍처 설계
+- Tool : draw.io
 
-## 8. 아키텍처: 시스템 아키텍처 설계
+
+[![draw.io](https://img.shields.io/badge/draw.io-Link-blue.svg)](https://app.diagrams.net/)
+
+![시스템아키텍쳐 drawio (3)](https://github.com/maxkim77/DRFChatService/assets/141907655/9437b8fb-b982-411b-ba05-2bfeb75e0806)
+
+
+- AWS Lightsail: (Amazon Web Services의 가상 프라이빗 서버(VPS) 서비스) 서버, 스토리지, 네트워킹, 데이터베이스 관리에 유용.
+
+- Ubuntu: (Linux 기반 운영 체제) 서버 환경에 최적화되어 있으며, 안정성과 보안에 강점을 가짐.
+
+- Gunicorn: (Python WSGI HTTP 서버) Django 애플리케이션 실행과 웹 애플리케이션과 인터넷의 인터페이스 제공에 사용.
+
+- Nginx: (HTTP 및 리버스 프록시 서버) 클라이언트 요청을 Gunicorn 등 애플리케이션 서버로 전달하고 정적 파일 제공.
+
+
+## 💶8. 개발 전략 및 특징
+![슬라이드1](https://github.com/maxkim77/DRFChatService/assets/141907655/85ef77d6-7ad4-4d80-af40-83c381fec2b4)
+
+
+- TDD : 기능 구현전 테스트 케이스를 먼저 작성하는 방법론
+- DRF & Class View : DRF - API 구축을 위한 라이브러리, Class View - View를 정의 할때 클래스로 구성하는 방식
+- JWT : Json객체를 사용하여 정보를 안전하게 전송하기 위한 방식
+- 특별기능 : AI, Speech to Text
+  
 ## 9. 메인 기능: 주요 기능 및 작동 방식
 - 주요 페이지 구현
 
@@ -284,6 +315,27 @@ https://github.com/maxkim77/DRFChatService_Local/assets/141907655/44be6060-0727-
 
 
 ![ezgif com-resize (1)](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/aa069ed9-1b22-4cf5-babd-86ebc7bd78ec)
+
+
+## 📚 추가 구현 사항
+
+- Github 배포 커스텀 도메인 활성화 / Https 해제
+![image](https://github.com/maxkim77/Practice/assets/141907655/9e897d2a-28fb-4763-94a2-7b8dde1f8dfd)
+
+
+![image](https://github.com/maxkim77/DRFChatService/assets/141907655/11ae452f-7312-4ab8-b450-aeefa3cd09e3)
+
+
+- Nginx 배포:
+
+
+    - AWS Lightsail에서 Ubuntu 환경 vscode ssh 연결
+    - Django repository git clone
+    - Gunicorn 설치 및 연결
+    - Nginx 설치 / Gunicorn 연결 및 배포
+      
+
+![ezgif com-resize (2)](https://github.com/maxkim77/DRFChatService/assets/141907655/4de86a64-164c-4383-9d15-383050cee174)
 
 
 ## 📜10. 에러 및 해결: 개발 중 발생한 주요 문제 및 해결 방법
@@ -345,16 +397,27 @@ https://github.com/maxkim77/DRFChatService_Local/assets/141907655/44be6060-0727-
         ```
 
 
- **⚒ 오류 4: UNIQUE constraint failed: authtoken_token.user_id**
-  - 일반 token 구현시 발생한 오류
+ **⚒ 오류 4: Failed to Start A high performance web server and a reverse proxy server**
+  - nginx를 재시작 하는 상황에서 오류가 발생해 systemctl status nginx.service 명령어를 통해 확인해 보니 위 오류와 같이 발생함.
   - **해결책:**
 
-  
-     이미 생성된 토큰을 반환하고 기존 토큰 삭제 후 새 토큰 생성
+    
+        - sudo nginx -t 를 통해 파일 문법 검사를 해봄
 
+    
+        - nginx.conf 파일 68번째 줄 문제가 있음을 나타내서 확인
+
+    
+        - include /etc/nginx/sites-enabled/*; 지시어가 중복되었기 때문에 삭제
+
+    
+        - 다시 sudo nginx -t 를 통해 검사해보니 문제가 없어서 서버 재시작
+
+  
  **💡 알게된 점:**
 
-  - 토큰 관련 오류 해결 방법 및 토큰 관리 방식의 차이(JWT vs. Token Authentication)를 알게됨.
+  - 토큰 관련 오류 해결 방법 및 토큰 관리 방식의 차이(JWT vs. Token Authentication)를 알게 됨.
+  - 클래스 설정 옵션에서 단일클래스에서 각각 아래와 같이 차이가 있음을 알게 됨.
 
 - **Jwt Authentication in Views**
 
@@ -371,7 +434,6 @@ https://github.com/maxkim77/DRFChatService_Local/assets/141907655/44be6060-0727-
       permission_classes = [IsAuthenticated]
 
       def get(self, request):
-          # 인증된 사용자의 정보는 `request.user`를 통해 접근
           pass
 
 - **Token Authentication in Views**
@@ -390,7 +452,6 @@ class ExampleView(APIView):
     permission_classes = [IsAuthenticated]
 
     def get(self, request):
-        # 인증된 사용자의 정보는 request.user를 통해 접근
         pass
 ```
 
@@ -404,4 +465,3 @@ class ExampleView(APIView):
 - 실제 백엔드 배포를 AWSlightsail Ubuntu, Gunicorn, Nginx 등을 통해 해보니 서버관련 각 스택들에 대해 개략적인 느낌을 익힐 수 있었음
   
 ##  👦12. 백엔드 개발자 : 김정원 Back-End Developer
-
