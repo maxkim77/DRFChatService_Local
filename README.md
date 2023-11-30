@@ -1,30 +1,26 @@
-# DRFChatService
+# DRF와 Chat Gpt로 만든 영어인터뷰 서비스 - English Max
+![제목 없는 디자인](https://github.com/maxkim77/DRFChatService/assets/141907655/7e90ccc0-12dd-4aeb-878b-fb1347cb54b6)
 
-## 0. Chat Service 개요
+## 📌 0. Chat Service 개요
 
 
 - 사용자가 영어 회화 및 인터뷰를 연습할 수 있는 플랫폼
 
-- 해외 취업을 생각 하거나 영어 스피킹 실력을 기르고 싶은 사람을 위한 플랫폼
+- 영어 인터뷰 준비가 있거나 영어 스피킹 실력을 기르고 싶은 사람을 위한 플랫폼
 
 
-## 1. 목표와 기능
+##  ✨1. 목표와 기능
 ### 1.1 목표
+- DRF 활용 웹 개발: 모든 구현은 Django Rest Framework를 사용하여 진행
 
-- 프론트 프로젝트 확장 기능: OpenAI의 GPT-3.5 모델을 이용한 챗봇 애플리케이션 개발
-
-  
-- API 기능: 기존 OpenAI에서 제공하는 API 대신 직접 구축한 서버(DRF:Dangro Rest Framework)를 통해 요청
-
-  
-- AI 통합 기능 : HTML/CSS 프로젝트에 AI 댓글 및 답변 기능 통합
+ 
+- API 기능 구현: 기존 OpenAI에서 제공하는 API 대신 직접 구축한 서버(DRF:Dangro Rest Framework)를 통해 요청
 
 
-- 프론트와 백앤드 분리 : JS를 활용한 백앤드 통신
+- 프론트와 백앤드 분리 : JS를 통해 HTTP/HTTPS 백엔드 서버 통신
 
   
 ### 1.2 기능
-- DRF 활용: 모든 구현은 Django Rest Framework를 사용하여 진행
 
 
 - 사용자 인증: JWT를 활용한 회원가입 및 로그인 기능 구현
@@ -40,35 +36,50 @@
 
 
 
-## 2. 개발 환경 및 배포 URL
+##  🎉2. 개발 환경 및 배포 URL
 ### 2.1 개발 환경
 - FE:
 
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26.svg?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6.svg?style=flat&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=javascript&logoColor=black)
+  ![HTML5](https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+  ![CSS3](https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
+  ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+
+✔ Tailwind 사용으로 css 간결화
+
 
 - BE:
 
 
-![Python](https://img.shields.io/badge/Python-3.8-3776AB.svg)
-![Django](https://img.shields.io/badge/Django-3.x-092E20.svg)
+  ![Python](https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=python&logoColor=white)
+  ![Django](https://img.shields.io/badge/Django-092E20.svg?style=for-the-badge&logo=django&logoColor=white)
+
 
 
 - Deployment:
 
-  
-![AWS EC2](https://img.shields.io/badge/AWS-EC2-orange?style=flat&logo=amazonaws)
-![Gunicorn](https://img.shields.io/badge/gunicorn-%2023.0-green.svg)
-![Nginx](https://img.shields.io/badge/nginx-1.21.3-blue.svg?style=flat&logo=nginx&logoColor=white)
+
+  [![GitHub](https://img.shields.io/badge/GitHub-100000.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
+  [![AWS Lightsail](https://img.shields.io/badge/AWS-Lightsail-FF9900.svg?style=for-the-badge&logo=amazon-aws)](https://aws.amazon.com/lightsail/)
+  [![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420.svg?style=for-the-badge&logo=ubuntu&logoColor=white)](https://ubuntu.com/)
+  [![Gunicorn](https://img.shields.io/badge/Gunicorn-green.svg?style=for-the-badge&logo=gunicorn)](https://gunicorn.org/)
+  [![Nginx](https://img.shields.io/badge/Nginx-blue.svg?style=for-the-badge&logo=nginx&logoColor=white)](https://nginx.org/)
+  [![DB SQLite](https://img.shields.io/badge/DB-SQLite-003B57.svg?style=for-the-badge&logo=sqlite)](https://www.sqlite.org/)
+
+✔ Githug 프론트 배포, AWS Lightsail 백엔드 배포
+### 2.2 배포 URL:
 
 
-### 2.2 배포 URL
-https://www.studyin.co.kr/
+https://dev.maxworld7070.net/
 
 
-## 3. 요구사항 명세와 기능 명세
+##  🎊3. 요구사항 명세와 기능 명세
+- Tool : Mindmeister
+
+[![MindMeister](https://img.shields.io/badge/MindMeister-Link-blue.svg)](https://www.mindmeister.com/)
+
 ![0](https://github.com/maxkim77/DRFChatService/assets/141907655/650c9dd6-d2e2-491a-8f7e-f56b5815c874)
 ### 3.1 기본 요구사항
 - DRF 활용: 모든 구현은 Django Rest Framework를 사용하여 진행
@@ -93,95 +104,134 @@ https://www.studyin.co.kr/
 - OAuth2 연동: 카카오, GitHub 등 OAuth2 연결
 
 
-## 4. 개발 일정 및 프로젝트구조 / 플로우 차트
+##  🗓4. 개발 일정 및 프로젝트구조 / 플로우 차트
 ### 4.1 개발일정(WBS)
 
+- Tool : Mermaid
+
+  [![Mermaid](https://img.shields.io/badge/Mermaid-Link-blue.svg)](https://mermaid.js.org/)
 
 ![Untitled diagram-2023-11-21-043933](https://github.com/maxkim77/DRFChatService/assets/141907655/f8895ba5-8142-49d9-a08f-e3f95b6ff341)
 
 
-| Scope              | WBS Level | WBS ID | WBS Element Title      | Completion  |
+| Scope              | WBS Level | WBS ID | WBS Element Title      | Completion (Completed Date)  |
 |--------------------|-----------|--------|------------------------|-------------|
-| Planning           | 1         | plan1  | WBS, Model, Requirements|  |
-| Planning           | 1         | plan2  | ERD                    |   |
-| Design             | 2         | des1   | Screen Design          |   |
-| Design             | 2         | des2   | URL Design             |   |
-| Development        | 3         | dev1   | Page Implementation    |   |
-| Development        | 3         | dev2   | CRUD Implementation    |   |
-| Development        | 3         | dev3   | User Registration & Login |  |
-| Development        | 3         | dev4   | Unique User Permissions |  |
-| Development        | 3         | dev5   | ChatGPT Integration    |  |
-| UI/UX              | 4         | ui1    | UI Implementation      |  |
-| Deployment         | 5         | dep1   | Deployment             |  |
-| Final Preparations | 6         | prep1  | Readme Completion      |  |
-| Final Preparations | 6         | prep2  | Presentation Preparation|  |
-| Presentation       | 7         | pres1  | Final Presentation     |  |
+| Planning           | 1         | plan1  | WBS, Model, Requirements| ✅ 11.21. |
+| Planning           | 1         | plan2  | ERD                    |  ✅ 11.21. |
+| Design             | 2         | des1   | Screen Design          |  ✅ 11.21. |
+| Design             | 2         | des2   | URL Design             |  ✅ 11.21. |
+| Development        | 3         | dev1   | Page Implementation    |  ✅ 11.22. |
+| Development        | 3         | dev2   | CRUD Implementation    |  ✅ 11.22. |
+| Development        | 3         | dev3   | User Registration & Login | ✅ 11.25.  |
+| Development        | 3         | dev4   | Unique User Permissions | ✅ 11.26 |
+| Development        | 3         | dev5   | ChatGPT Integration    | ✅ 11.27. |
+| UI/UX              | 4         | ui1    | UI Implementation      |  ✅ 11.27. |
+| Deployment         | 5         | dep1   | Deployment             | ✅ 11.28. |
+| Final Preparations | 6         | prep1  | Readme Completion      | ✅ 11.29. |
+| Final Preparations | 6         | prep2  | Presentation Preparation| ✅ 11.30. |
+| Presentation       | 7         | pres1  | Final Presentation     | ✅11.31. |
 
 ### 4.2 프로젝트 구조
-
+```
+📦project
+ ┣ 📂accounts
+ ┃ ┣ 📂migrations
+ ┃ ┣ 📜admin.py
+ ┃ ┣ 📜apps.py
+ ┃ ┣ 📜managers.py
+ ┃ ┣ 📜models.py
+ ┃ ┣ 📜tests.py
+ ┃ ┣ 📜urls.py
+ ┃ ┣ 📜views.py
+ ┃ ┗ 📜__init__.py
+ ┣ 📂chat
+ ┃ ┣ 📂migrations
+ ┃ ┣ 📂__pycache__
+ ┃ ┣ 📜admin.py
+ ┃ ┣ 📜apps.py
+ ┃ ┣ 📜models.py
+ ┃ ┣ 📜tests.py
+ ┃ ┣ 📜urls.py
+ ┃ ┣ 📜views.py
+ ┃ ┗ 📜__init__.py
+ ┣ 📂project
+ ┃ ┣ 📜asgi.py
+ ┃ ┣ 📜settings.env
+ ┃ ┣ 📜settings.py
+ ┃ ┣ 📜urls.py
+ ┃ ┣ 📜wsgi.py
+ ┃ ┗ 📜__init__.py
+ ┣ 📂staticfiles
+ ┣ 📜.env
+ ┣ 📜.gitignore
+ ┣ 📜db.sqlite3
+ ┣ 📜manage.py
+ ┗ 📜requirements.txt
+📦env
+📦FE
+ ┣ 📂css
+ ┣ 📂js
+ ┣ 📂Repo
+ ┗ 📜index.html
+```
 
 ### 4.3 플로우 차트
-![제목 없는 다이어그램 drawio](https://github.com/maxkim77/DRFChatService/assets/141907655/f4b4ebc5-e11d-4a51-ab4f-67155312c625)
+- Tool : draw.io
+
+
+  [![draw.io](https://img.shields.io/badge/draw.io-Link-blue.svg)](https://app.diagrams.net/)
+
+
+![제목 없는 다이어그램 drawio (1)](https://github.com/maxkim77/DRFChatService/assets/141907655/f4cf2b3c-a783-4fd8-a3c4-ecfbe079e7c7)
 
 ### 4.4 URL 기획
-| 엔드포인트          | HTTP 메서드 | 기능                            | 앱          |
-|----------------------|-------------|---------------------------------|-------------|
-| `/admin/`            | GET         | 관리자 패널 접속                 | admin       |
-| `/accounts/join/`    | POST        | 사용자 등록                     | accounts    |
-| `/accounts/mypage/`  | GET         | 내 정보 페이지 조회              | accounts    |
-| `/accounts/token/`    | POST        | JWT 토큰 획득                   | accounts    |
-| `/accounts/token/refresh/` | POST | JWT 토큰 갱신                   | accounts    |
-| `/chatbot/chats/`    | GET         | 모든 채팅 목록 조회             | chatbot     |
-| `/chatbot/chats/`    | POST        | 채팅 생성                       | chatbot     |
-| `/chatbot/chats/{id}/` | GET      | 특정 채팅 조회                   | chatbot     |
-| `/chatbot/chats/{id}/` | PUT      | 특정 채팅 수정                   | chatbot     |
-| `/chatbot/chats/{id}/` | DELETE   | 특정 채팅 삭제                   | chatbot     |
+| 엔드포인트                    | HTTP 메서드 | 기능                          | 앱           | 비고                    |
+|-------------------------------|-------------|-------------------------------|--------------|-------------------------|
+| /admin/                       |  -           | 관리자 패널 접속               | admin        |                         |
+| /account/join/                | POST        | 사용자 등록                   | accounts     |                         |
+| /account/login/               | POST        | 로그인                        | accounts     |                         |
+| /account/logout/              | POST        | 로그아웃                      | accounts     |                         |
+| /account/mypage/             | GET         | 내정보조회                     | accounts     |* 로그인후 mypage로 리다이렉트 될 때<br> HTTP 응답 200 성공여부 테스트 용 url  |
+| /api/chat/gpt/               | POST         | GPT 챗봇 API                  | chat         |                         |
+| /account/token/               | POST        | JWT 토큰 획득                 | accounts     |                         |
+| /account/token/refresh/       | POST        | JWT 토큰 갱신                 | accounts     | * 프론트에서 처리할때 JS 코드에서 refresh <br> url 부분도  fetch에 포함해주어야 accesstoken을 제대로 반환함 |
+
+- HTTP 메서드 차이에 따라 페이지 특성에 맞게 선택
+    - GET 방식 : 데이터를 url에 포함시켜 전달 ex) 정보조회
+    - POST 방식 : 데이터를 HTTP요청 본문에 포함시켜 전달 ex) 데이터 제출 및 변경
+
+##  🧶5. 와이어프레임 / UI
+
+- Tool : Uizard
+
+  [![Uizard](https://img.shields.io/badge/Visit-Uizard-yellow?style=flat-square&logo=uizard)](https://uizard.io/)
 
 
-
-### 4.5 설치 라이브러리
-```
-aiohttp==3.8.5
-aiosignal==1.3.1
-asgiref==3.7.2
-async-timeout==4.0.2
-attrs==23.1.0
-certifi==2023.7.22
-charset-normalizer==3.2.0
-click==8.1.6
-Django==4.2.3
-django-cors-headers==4.2.0
-django-environ==0.10.0
-djangorestframework==3.14.0
-frozenlist==1.4.0
-gTTS==2.3.2
-idna==3.4
-multidict==6.0.4
-openai==0.27.8
-pytz==2023.3
-requests==2.31.0
-sqlparse==0.4.4
-tqdm==4.65.0
-urllib3==2.0.4
-yarl==1.9.2
-djangorestframework-simplejwt==4.6
-Djoser==2.1
-django-allauth==0.49.0  # Adjust the version as needed
-dj-rest-auth==2.2.5  # Adjust the version as needed
-```
+![image](https://github.com/maxkim77/DRFChatService/assets/141907655/4c51a948-7be2-4cca-8aa0-2ec702a934e7)
 
 
-## 5. 역할 분담: 김정원 Back-End Developer
+![image](https://github.com/maxkim77/DRFChatService/assets/141907655/3a76be2a-41fe-4cd4-be1b-0a7720e1db5a)
 
 
-## 6. 와이어프레임 / UI
-![1](https://github.com/maxkim77/DRFChatService_BE/assets/141907655/d128d630-e9d2-4076-a28a-cb413e3d22a9)
-![2](https://github.com/maxkim77/DRFChatService_BE/assets/141907655/190b0ea7-37d3-46a5-93f7-d7ed391b77ed)
-
-## 7. 데이터베이스 모델링:
+![슬라이드1](https://github.com/maxkim77/DRFChatService/assets/141907655/331cc110-a832-4000-8dbe-ed8b74ffbaaa)
 
 
-![Untitled (1)](https://github.com/maxkim77/DRFChatService_BE/assets/141907655/08e230ca-6fa1-4fc0-a460-766f54af200a)
+##  🖼6. 데이터베이스 모델링:
+
+
+![Untitled (1)](https://github.com/maxkim77/DRFChatService/assets/141907655/5ae969d2-8250-4723-b751-ea9220bb28b0)
+- User Table: CustomUser 모델에서 기본키 id, 고유 필드 email 포함 함.
+
+
+- Chat Table: role 필드 등 포함 하고, 외래키 id를 통해 사용자 테이블 참조함.
+
+
+- UserChatRequest Table: UserChatRequest 모델에서 외래키 user_id를 통해 사용자 테이블 참조하고,  요청 수 request_count, 날짜 date 포함.
+
+
+- Chat 모델과 UserChatRequest 모델에서 user 필드를 통해 사용자 테이블과 다대일 관계
+
+## 7. 개발자 김정원
 
 ## 8. 아키텍처: 시스템 아키텍처 설계
 ## 9. 메인 기능: 주요 기능 및 작동 방식
