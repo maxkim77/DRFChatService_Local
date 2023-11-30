@@ -246,7 +246,7 @@
 
 [![draw.io](https://img.shields.io/badge/draw.io-Link-blue.svg)](https://app.diagrams.net/)
 
-![시스템아키텍쳐 drawio (3)](https://github.com/maxkim77/DRFChatService/assets/141907655/9437b8fb-b982-411b-ba05-2bfeb75e0806)
+![시스템아키텍쳐 drawio (3)](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/069e265d-572c-48c0-aae3-8bb1ee27c313)
 
 
 - AWS Lightsail: (Amazon Web Services의 가상 프라이빗 서버(VPS) 서비스) 서버, 스토리지, 네트워킹, 데이터베이스 관리에 유용.
@@ -259,7 +259,9 @@
 
 
 ## 💶8. 개발 전략 및 특징
-![슬라이드1](https://github.com/maxkim77/DRFChatService/assets/141907655/85ef77d6-7ad4-4d80-af40-83c381fec2b4)
+
+
+![슬라이드1](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/4815490f-b232-4fe0-96d4-1be1cb9b5554)
 
 
 - TDD : 기능 구현전 테스트 케이스를 먼저 작성하는 방법론
@@ -320,10 +322,9 @@ https://github.com/maxkim77/DRFChatService_Local/assets/141907655/44be6060-0727-
 ## 📚 추가 구현 사항
 
 - Github 배포 커스텀 도메인 활성화 / Https 해제
-![image](https://github.com/maxkim77/Practice/assets/141907655/9e897d2a-28fb-4763-94a2-7b8dde1f8dfd)
 
-
-![image](https://github.com/maxkim77/DRFChatService/assets/141907655/11ae452f-7312-4ab8-b450-aeefa3cd09e3)
+  
+![github deploy](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/0576e872-22fd-4d52-a81e-0c7c324b3966)
 
 
 - Nginx 배포:
@@ -335,7 +336,7 @@ https://github.com/maxkim77/DRFChatService_Local/assets/141907655/44be6060-0727-
     - Nginx 설치 / Gunicorn 연결 및 배포
       
 
-![ezgif com-resize (2)](https://github.com/maxkim77/DRFChatService/assets/141907655/4de86a64-164c-4383-9d15-383050cee174)
+![ezgif com-resize (2)](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/627eb8ec-946c-4deb-bda3-17d0c3644bc4)
 
 
 ## 📜10. 에러 및 해결: 개발 중 발생한 주요 문제 및 해결 방법
