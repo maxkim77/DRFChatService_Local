@@ -70,8 +70,13 @@
 
 ✔ Githug 프론트 배포, AWS Lightsail 백엔드 배포
 ### 2.2 배포 및 관련 URL: https://dev.maxworld7070.net/
+
+
 📍Backend 배포용 : https://github.com/maxkim77/DRFChatService_BE
+
+
 📍Frontend 배포용 : https://github.com/maxkim77/DRFChatService_FE
+
 
 ##  🎊3. 요구사항 명세와 기능 명세
 - Tool : Mindmeister
