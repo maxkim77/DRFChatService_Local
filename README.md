@@ -273,7 +273,7 @@
 
 
 
-- API 기능과 사용 방법을 명확히 전달 하기 위한 Swegger drf-yasg 사용하여 문서화
+📕 **(참고사항)** API 기능과 사용 방법을 명확히 전달 하기 위한 Swegger drf-yasg 사용하여 문서화
 
 ![ezgif com-resize (1)](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/a59b4221-c71c-44c4-bd0a-dc2ffcf76405)
 - 자동화된 문서 생성
