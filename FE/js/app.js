@@ -76,7 +76,7 @@ function checkAuthenticationStatus() {
 }
 
 
-    // 사용자 데이터 가져오기 함수
+    // Fech the data
     function fetchUserData(accessToken) {
         fetch('http://127.0.0.1:8000/account/mypage/', {
             method: 'GET',
@@ -88,7 +88,7 @@ function checkAuthenticationStatus() {
             if (response.ok) {
                 return response.json();
             } else if (response.status === 401) {
-                // 401 오류시 토큰 갱신 시도
+                // 401 error
                 return refreshToken().then(newAccessToken => {
                     return fetchUserData(newAccessToken);
                 });
@@ -97,7 +97,7 @@ function checkAuthenticationStatus() {
             }
         })
         .then(data => {
-            // 사용자 데이터 처리 로직
+       
         })
         .catch(error => {
             console.error('Error:', error);
@@ -135,16 +135,16 @@ function sendMessage() {
                 if (response.ok) {
                     return response.json();
                 } else if (response.status === 401) {
-                    // 401 오류시 토큰 갱신 시도
+                    // 401 
                     return refreshToken().then(newAccessToken => {
-                        return sendMessage(); // 새 토큰으로 다시 시도
+                        return sendMessage(); // New Token
                     });
                 } else {
                     throw new Error('Failed to send message');
                 }
             })
             .then(data => {
-                hideLoading(); // AI 응답을 받으면 로딩 창 숨기기
+                hideLoading(); // AI Response hide loading
                 // Add AI response to the chat
                 addMessageToChat("assistant", data.response);
                 playTextToSpeech(data.audio_url);
@@ -230,7 +230,7 @@ function startInterview() {
             })
             .then(response => response.json())
             .then(data => {
-                hideLoading(); // AI 응답을 받으면 로딩 창 숨기기
+                hideLoading(); // AI Response
                 // Add AI response to the chat
                 addMessageToChat("assistant", data.response);
                 playTextToSpeech(data.audio_url);
@@ -272,13 +272,6 @@ function startSpeechToText() {
     }
 }
 
-// 이 부분은 음성 파일 재생 로직을 따로 빼놓은 것입니다.
-function playTextToSpeech(audioUrl) {
-    var ttsAudio = document.getElementById("ttsAudio");
-    ttsAudio.src = audioUrl;
-    ttsAudio.play();
-}
-
 // Handle Enter key press event
 var messageInput = document.getElementById("messageInput");
 messageInput.addEventListener("keyup", function(event) {
@@ -312,9 +305,7 @@ function checkChatRequestCount() {
 const accessToken = localStorage.getItem('access_token');
 if (!accessToken) {
     alert('로그인이 필요합니다.');
-    window.location.href = '/FE/login.html'; // 로그인 페이지의 실제 경로로 변경해야 합니다.
+    window.location.href = 'maxworld7070.net/Repo/login/index.html'; // Login/
 } else {
     fetchUserData(accessToken);
 }
-
-// refreshToken 함수와 fetchUserData 함수는 그대로 유지
