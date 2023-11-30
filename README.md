@@ -68,7 +68,7 @@
   [![Nginx](https://img.shields.io/badge/Nginx-blue.svg?style=for-the-badge&logo=nginx&logoColor=white)](https://nginx.org/)
   [![DB SQLite](https://img.shields.io/badge/DB-SQLite-003B57.svg?style=for-the-badge&logo=sqlite)](https://www.sqlite.org/)
 
-✔ Githug 프론트 배포, AWS Lightsail 백엔드 배포
+✔ Github 프론트 배포, AWS Lightsail 백엔드 배포
 ### 2.2 배포 및 관련 URL: https://dev.maxworld7070.net/
 
 
