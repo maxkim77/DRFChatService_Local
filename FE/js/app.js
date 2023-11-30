@@ -305,7 +305,7 @@ function checkChatRequestCount() {
 const accessToken = localStorage.getItem('access_token');
 if (!accessToken) {
     alert('로그인이 필요합니다.');
-    window.location.href = 'maxworld7070.net/Repo/login/index.html'; // Login/
+    window.location.href = 'FE/login.html'; // Login/
 } else {
     fetchUserData(accessToken);
 }
