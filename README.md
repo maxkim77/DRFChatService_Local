@@ -212,6 +212,9 @@
 - 자동화된 문서 생성
 - 인터렉티브한 테스팅 인터페이스
 
+🎁 DRF API Document Pdf : https://drive.google.com/file/d/1kwkup07S1y43iVe64-FYTy0PvZ68nh5c/view?usp=sharing
+
+
 ##  🧶5. 와이어프레임 / UI
 
 - Tool : Uizard
@@ -276,9 +279,7 @@
 - DRF & Class View : DRF - API 구축을 위한 라이브러리, Class View - View를 정의 할때 클래스로 구성하는 방식
 - JWT : Json객체를 사용하여 정보를 안전하게 전송하기 위한 방식
 - 특별기능 : AI, Speech to Text
-
-    
-🎁 DRF API Document Pdf : https://drive.google.com/file/d/1kwkup07S1y43iVe64-FYTy0PvZ68nh5c/view?usp=sharing
+  
        - 
 ## 9. 메인 기능: 주요 기능 및 작동 방식
 - 주요 페이지 구현
