@@ -235,7 +235,7 @@
 - Chat Table: role 필드 등 포함 하고, 외래키 id를 통해 사용자 테이블 참조함.
 
 
-- UserChatRequest Table: UserChatRequest 모델에서 외래키 user_id를 통해 사용자 테이블 참조하고,  요청 수 request_count, 날짜 date 포함.
+- UserChatRequest Table: UserChatRequest 모델에서 외래키 user_id를 통해 사용자 테이블 참조하고,  요청 수, 날짜 포함.
 
 
 - Chat 모델과 UserChatRequest 모델에서 user 필드를 통해 사용자 테이블과 다대일 관계
