@@ -83,7 +83,9 @@
 
 [![MindMeister](https://img.shields.io/badge/MindMeister-Link-blue.svg)](https://www.mindmeister.com/)
 
-![0](https://github.com/maxkim77/DRFChatService/assets/141907655/650c9dd6-d2e2-491a-8f7e-f56b5815c874)
+![cover](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/249439d9-9e83-434d-a556-cd0810e49ff0)
+
+
 ### 3.1 기본 요구사항
 - DRF 활용: 모든 구현은 Django Rest Framework를 사용하여 진행
 
@@ -112,9 +114,10 @@
 
 - Tool : Mermaid
 
-  [![Mermaid](https://img.shields.io/badge/Mermaid-Link-blue.svg)](https://mermaid.js.org/)
+  [![Mermaid](https://img.shields.io/badge/Mermaid-Link-blue.svg)](https://mermaid.js.org/)![wbs](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/7bbdc179-facc-427e-b14e-5d787a2a3cf3)
 
-![Untitled diagram-2023-11-21-043933](https://github.com/maxkim77/DRFChatService/assets/141907655/f8895ba5-8142-49d9-a08f-e3f95b6ff341)
+![Uploading wbs.png…]()
+
 
 
 | Scope              | WBS Level | WBS ID | WBS Element Title      | Completion (Completed Date)  |
@@ -185,7 +188,7 @@
   [![draw.io](https://img.shields.io/badge/draw.io-Link-blue.svg)](https://app.diagrams.net/)
 
 
-![제목 없는 다이어그램 drawio (1)](https://github.com/maxkim77/DRFChatService/assets/141907655/f4cf2b3c-a783-4fd8-a3c4-ecfbe079e7c7)
+![4 3 플로우차트](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/275da42a-cb5f-48e1-9c7b-64e0d0f69fbd)
 
 ### 4.4 URL 기획
 | 엔드포인트                    | HTTP 메서드 | 기능                          | 앱           | 비고                    |
@@ -240,49 +243,50 @@
 ## 9. 메인 기능: 주요 기능 및 작동 방식
 - 주요 페이지 구현
 
-  
-![10](https://github.com/maxkim77/DRFChatService/assets/141907655/c1e5f843-451c-45a8-b179-9ae48b437d19)
+
+![10](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/8732cfa5-a4bf-46cf-89a7-0f931a1ea0cc)
 
 
 - Signup 기능
 
   
-![3](https://github.com/maxkim77/DRFChatService/assets/141907655/d40ff50c-ac3b-4142-b5eb-0a4307a15776)
+![3](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/16555e9b-0012-4633-8c0c-281b9a89d068)
 
   
 - Login 기능
 
 
-![1](https://github.com/maxkim77/DRFChatService/assets/141907655/b71ca5a5-da7b-4bad-b71a-a0c3f87c5a6a)
+![1](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/afee7438-e147-4f4f-b593-40c345e6502b)
 
 
 - Logout 기능
 
 
-![4](https://github.com/maxkim77/DRFChatService/assets/141907655/ea879056-399d-468b-b547-9dcbefd73c71)
+![4](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/5af25ccd-b891-4784-a7b6-6cb94b021eeb)
 
 
 - Chat Gpt - DRF 연결
 
 
-https://github.com/maxkim77/DRFChatService/assets/141907655/0bcc53bf-03ce-4ede-84f6-b13ddd8a12c2
+https://github.com/maxkim77/DRFChatService_Local/assets/141907655/44be6060-0727-4092-8fba-c892cfa7abfd
 
 
 - 로그인을 한 유저만 사용가능
 
 
-![1](https://github.com/maxkim77/DRFChatService/assets/141907655/4692f2f4-351a-4ca3-ab58-b8128ad12bc2)
+![1](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/71dca268-3629-49c6-ad87-ded780f9ef77)
 
 
 - 각 유저당 5번 요청 제한
 
-![ezgif com-resize](https://github.com/maxkim77/DRFChatService/assets/141907655/71e00498-098a-4871-918c-d5daa8637d54)
+
+![ezgif com-resize](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/c1cd8dad-c728-44e6-bce2-d8ddea34d006)
 
 
 - 채팅내역 데이터베이스 저장 재로그인후 조회 가능
 
 
-![ezgif com-resize (1)](https://github.com/maxkim77/DRFChatService/assets/141907655/976f44c7-4f42-4b21-ae66-8a51aa77d507)
+![ezgif com-resize (1)](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/aa069ed9-1b22-4cf5-babd-86ebc7bd78ec)
 
 
 ## 📜10. 에러 및 해결: 개발 중 발생한 주요 문제 및 해결 방법
