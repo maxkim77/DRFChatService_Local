@@ -313,7 +313,7 @@ https://github.com/maxkim77/DRFChatService_Local/assets/141907655/44be6060-0727-
 ![ezgif com-resize](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/c1cd8dad-c728-44e6-bce2-d8ddea34d006)
 
 
-- 채팅내역 데이터베이스 저장 재로그인후 조회 가능
+- 채팅내역은 데이터베이스 저장 되며 재로그인후 조회 가능
 
 
 ![ezgif com-resize (1)](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/aa069ed9-1b22-4cf5-babd-86ebc7bd78ec)
