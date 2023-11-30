@@ -230,3 +230,124 @@ https://github.com/maxkim77/DRFChatService/assets/141907655/0bcc53bf-03ce-4ede-8
 
 
 ![ezgif com-resize (1)](https://github.com/maxkim77/DRFChatService/assets/141907655/976f44c7-4f42-4b21-ae66-8a51aa77d507)
+
+
+## 📜10. 에러 및 해결: 개발 중 발생한 주요 문제 및 해결 방법
+**⚒ 오류 1: "400 (Bad Request)" 오류 발생**
+
+  - **원인:** 프론트엔드와 백엔드 간의 데이터 불일치
+
+  - **해결책:**
+
+    - **프론트엔드 수정:**
+    
+        필수 필드와 데이터 형식 확인 후 전송
+        ```javascript
+        fetch('http://127.0.0.1:8000/api/user/register/', {
+          method: 'POST',
+          mode: 'cors', 
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            username: username,
+            email: email,
+            password: password,
+            password2: confirmPassword
+          })
+        })
+        ```
+    
+    - **오류 메시지 처리:** 프론트엔드에서 오류 메시지 처리
+
+    - **서버 로그 정상작동 확인:**
+
+**⚒ 오류 2: AssertionError in Allauth**
+   - 사용자 인증, 등록, 로그인, 비밀번호 기능등 제대로 동작 하지 않을 때 발생하는 에러 네임
+
+  - **원인:** ACCOUNT_USERNAME_REQUIRED 설정이 False로 되어 있음
+
+  - **해결책:** `settings.py`에서 `ACCOUNT_USERNAME_REQUIRED`를 True로 설정
+
+**⚒ 오류 3: 토큰 저장 및 사용 오류**
+  - 일반 token 인증 구현시 발생한 오류
+  - **해결책:**
+
+    - **클라이언트 코드 수정:**
+    
+        토큰 키 일치 확인
+        ```javascript
+        localStorage.setItem('token', data.Token);
+        ```
+
+    - **API 호출 시 토큰 포함:**
+    
+        Authorization 헤더에 토큰 추가
+        ```javascript
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Token ${localStorage.getItem('token')}`
+        }
+        ```
+
+
+ **⚒ 오류 4: UNIQUE constraint failed: authtoken_token.user_id**
+  - 일반 token 구현시 발생한 오류
+  - **해결책:**
+
+  
+     이미 생성된 토큰을 반환하고 기존 토큰 삭제 후 새 토큰 생성
+
+ **💡 알게된 점:**
+
+  - 토큰 관련 오류 해결 방법 및 토큰 관리 방식의 차이(JWT vs. Token Authentication)를 알게됨.
+
+- **Jwt Authentication in Views**
+
+  - **설정:** `rest_framework_simplejwt.authentication.JWTAuthentication`을 `authentication_classes`에 추가
+
+  - **사용 예시:**
+  ```python
+  from rest_framework_simplejwt.authentication import JWTAuthentication
+  from rest_framework.permissions import IsAuthenticated
+  from rest_framework.views import APIView
+
+  class ExampleView(APIView):
+      authentication_classes = [JWTAuthentication]
+      permission_classes = [IsAuthenticated]
+
+      def get(self, request):
+          # 인증된 사용자의 정보는 `request.user`를 통해 접근
+          pass
+
+- **Token Authentication in Views**
+
+- **설정**: rest_framework.authentication.TokenAuthentication을 authentication_classes에 추가
+
+- **사용 예시**:
+
+```python
+from rest_framework.authentication import TokenAuthentication
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.views import APIView
+
+class ExampleView(APIView):
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        # 인증된 사용자의 정보는 request.user를 통해 접근
+        pass
+```
+
+##  📖11. 개발하며 느낀점: 프로젝트를 통해 얻은 경험 및 느낀 점
+- DRF책을 집필하면서 개념만 공부를 했는데, 실제로 적용해보니 단순해보이면서도 매우 어렵게 느낌
+- 특히 일반토큰을 통해 구현을 마쳤지만, JWT토큰도 한번 도전해봐야겠다는 생각에 WBS 계획보다 기간을 늘려 6번의 프로젝트 재생성을 끝에 통신에 성공함
+- 백엔드 개발자로 공부를 하고 있지만, 프론트개발자와 소통하거나 오류를 해결하려면 Js 지식도 갖춰야 함을 느낌 추가적으로 Vanilla Js 말고도 React 등 다양한 공부를 해야겠다는 생각이 듬
+- DRF를 하며 어려웠던 점: 생각보다 참고할 만한 강의나 영상이 적었던 점.  찾아보면 블로그 글이 있긴한데 에러 상황이 달라 적용할 수 없었던점. 영어로 된 강의나 문서가 많았던 점. DRF는 GPT의 할루시네이션이 조금 심했던 점
+- 하지만 어려운 만큼 DRF는 희소성 있고 경쟁력 있는 기술이라는 생각이 듬
+- 서버 배포를 하며 어려웠던 점: 마찬가지로 관련 한국어 강의 등이 적어 적용하기 어려웠음. 글만 보고 이해하기 부족하다는 느낌이 듬.
+- 실제 백엔드 배포를 AWSlightsail Ubuntu, Gunicorn, Nginx 등을 통해 해보니 서버관련 각 스택들에 대해 개략적인 느낌을 익힐 수 있었음
+  
+##  👦12. 백엔드 개발자 : 김정원 Back-End Developer
+
