@@ -434,7 +434,7 @@ https://github.com/maxkim77/DRFChatService_Local/assets/141907655/44be6060-0727-
   - 토큰 관련 오류 해결 방법 및 토큰 관리 방식의 차이(JWT vs. Token Authentication)를 알게 됨.
   - 클래스 설정 옵션에서 단일클래스에서 각각 아래와 같이 차이가 있음을 알게 됨.
 
-- **Jwt Authentication in Views**
+- **Simple Jwt Authentication in Views**
 
   - **설정:** `rest_framework_simplejwt.authentication.JWTAuthentication`을 `authentication_classes`에 추가
 
