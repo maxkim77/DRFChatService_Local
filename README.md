@@ -184,7 +184,8 @@
 - Tool : draw.io
 [![draw.io](https://img.shields.io/badge/draw.io-Link-blue.svg)](https://app.diagrams.net/)
 
-![제목 없는 다이어그램 drawio (1)](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/f0b1b1f1-11d2-4a07-837d-d6afc954dfa1)
+
+![플로우차트 drawio](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/f6c122ba-c2f7-4daf-871b-7995c61a0a01)
 
 
 ### 4.4 URL 기획
