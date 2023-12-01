@@ -278,12 +278,12 @@
 
 - '코드의 가치'와 '효율성'을 높이기 위해 아래의 방식을 채택해 개발 함.
 
-![슬라이드1](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/7ae75a8e-949f-4835-89fb-1f61a51d7875)
+![슬라이드1](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/c463321f-eea6-43b5-b6dd-53bd5ebee685)
 
 
 - TDD : 기능 구현전 테스트 케이스를 먼저 작성하는 방법론
 - DRF & Class View : DRF - API 구축을 위한 라이브러리, Class View - View를 정의 할때 클래스로 구성하는 방식
-- SimpleJWT : 일반 토큰에 비해 정보를 안전하게 전송하기 위해 Simple Jwt 라이브러리를 활용함.
+- Simple JWT : 일반 토큰에 비해 정보를 안전하게 전송하기 위해 Simple JWT 라이브러리를 활용함.
 - 특별기능 : AI, Speech to Text
 
   
