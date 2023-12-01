@@ -182,12 +182,10 @@
 
 ### 4.3 플로우 차트
 - Tool : draw.io
+[![draw.io](https://img.shields.io/badge/draw.io-Link-blue.svg)](https://app.diagrams.net/)
 
+![제목 없는 다이어그램 drawio](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/d7274a41-6d69-42b0-b331-4aef95ecf0b8)
 
-  [![draw.io](https://img.shields.io/badge/draw.io-Link-blue.svg)](https://app.diagrams.net/)
-
-
-![4 3 플로우차트](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/275da42a-cb5f-48e1-9c7b-64e0d0f69fbd)
 
 ### 4.4 URL 기획
 | 엔드포인트                    | HTTP 메서드 | 기능                          | 앱           | 비고                    |
