@@ -71,13 +71,15 @@
 ✔ Github 프론트 배포, AWS Lightsail 백엔드 배포
 ### 2.2 배포 및 관련 URL: 
 
-- 프론트엔드(Git 배포) : https://dev.maxworld7070.net/
-- 백엔드(Nginx 배포) : https://back.maxworld7070.net/
-
 📍Backend 배포용 : https://github.com/maxkim77/DRFChatService_BE
 
 
 📍Frontend 배포용 : https://github.com/maxkim77/DRFChatService_FE
+
+- 프론트엔드(Git 배포) : https://dev.maxworld7070.net/
+
+  
+- 백엔드(Nginx 배포) : https://back.maxworld7070.net/
 
 
 ##  🎊3. 요구사항 명세와 기능 명세
