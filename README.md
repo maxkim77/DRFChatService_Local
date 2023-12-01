@@ -258,9 +258,9 @@
 
 [![draw.io](https://img.shields.io/badge/draw.io-Link-blue.svg)](https://app.diagrams.net/)
 
-![시스템아키텍쳐 drawio (3)](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/069e265d-572c-48c0-aae3-8bb1ee27c313)
+![시스템아키텍쳐 drawio](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/0f5e927e-54fa-44d5-b389-9908c6e992ae)
 
-
+(Back-End Deployment Stack Features)
 - AWS Lightsail: (Amazon Web Services의 가상 프라이빗 서버(VPS) 서비스) 서버, 스토리지, 네트워킹, 데이터베이스 관리에 유용.
 
 - Ubuntu: (Linux 기반 운영 체제) 서버 환경에 최적화되어 있으며, 안정성과 보안에 강점을 가짐.
@@ -334,13 +334,13 @@ https://github.com/maxkim77/DRFChatService_Local/assets/141907655/44be6060-0727-
 
 
 ## 📚 추가 구현 사항
-
+(Front-End Deployment)
 - Github 배포 커스텀 도메인 활성화 / Https 해제
 
   
 ![github deploy](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/0576e872-22fd-4d52-a81e-0c7c324b3966)
 
-
+(Back-End Deployment)
 - Nginx 배포:
 
 
