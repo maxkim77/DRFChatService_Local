@@ -69,8 +69,10 @@
   [![DB SQLite](https://img.shields.io/badge/DB-SQLite-003B57.svg?style=for-the-badge&logo=sqlite)](https://www.sqlite.org/)
 
 ✔ Github 프론트 배포, AWS Lightsail 백엔드 배포
-### 2.2 배포 및 관련 URL: https://dev.maxworld7070.net/
+### 2.2 배포 및 관련 URL: 
 
+- https://dev.maxworld7070.net/
+- https://back.maxworld7070.net/
 
 📍Backend 배포용 : https://github.com/maxkim77/DRFChatService_BE
 
