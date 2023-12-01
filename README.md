@@ -264,7 +264,9 @@
 
 [![draw.io](https://img.shields.io/badge/draw.io-Link-blue.svg)](https://app.diagrams.net/)
 
-![시스템아키텍쳐 drawio](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/0f5e927e-54fa-44d5-b389-9908c6e992ae)
+
+![시스템아키텍쳐 drawio (4)](https://github.com/maxkim77/DRFChatService_Local/assets/141907655/e41ce926-6f5d-43af-a777-8cd29b7ca1df)
+
 
 (Back-End Deployment Stack Features)
 - AWS Lightsail: (Amazon Web Services의 가상 프라이빗 서버(VPS) 서비스) 서버, 스토리지, 네트워킹, 데이터베이스 관리에 유용.
