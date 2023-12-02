@@ -485,4 +485,4 @@ class ExampleView(APIView):
 - 서버 배포를 하며 어려웠던 점: 마찬가지로 관련 한국어 강의 등이 적어 적용하기 어려웠음. 글만 보고 이해하기 부족하다는 느낌이 듬.
 - 실제 백엔드 배포를 AWSlightsail Ubuntu, Gunicorn, Nginx 등을 통해 해보니 서버관련 각 스택들에 대해 개략적인 느낌을 익힐 수 있었음
   
-##  👦12. 백엔드 개발자 : 김정원 Back-End Developer
+##  👦12. 백엔드 개발자 : 김정원
