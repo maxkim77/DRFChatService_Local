@@ -138,7 +138,7 @@
 | Deployment         | 5         | dep1   | Deployment             | ✅ 11.28. |
 | Final Preparations | 6         | prep1  | Readme Completion      | ✅ 11.29. |
 | Final Preparations | 6         | prep2  | Presentation Preparation| ✅ 11.30. |
-| Presentation       | 7         | pres1  | Final Presentation     | ✅11.31. |
+| Presentation       | 7         | pres1  | Final Presentation     | ✅12.01. |
 
 ### 4.2 프로젝트 구조
 ```
